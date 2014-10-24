@@ -1,31 +1,65 @@
-// bower:scss
-// endbower
+@import 'reset';
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 
 body {
-  background: #fafafa;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333;
+  font-family: 'Lato', sans-serif;
 }
 
-.hero-unit {
-  margin: 50px auto 0 auto;
-  width: 300px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
-  h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
+$blue: rgb(0,165,229);
+#root {
+  width: 100%;
+}
+
+header {
+  background-color: $blue;
+  padding: 100px 0 100px;
+}
+
+main,
+.wrpr {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.round-img {
+  border-radius: 100px;
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+section h2,
+section h4,
+.block {
+  text-align: center;
+}
+p {
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-size: 28px;
+  margin: 0 0 30px;
+  span {
+    font-size: 40px;
   }
 }
+h2 {
+  font-size: 22px;
+}
+h3 {
+  font-size: 36px;
+}
+h4 {
+  font-size: 24px;
+}
 
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+header {
+  h1, h2 {
+    text-align: center;
+    color: white;
+  }
+  h1 span {
+    text-transform: uppercase;
+    display: block;
+  }
 }

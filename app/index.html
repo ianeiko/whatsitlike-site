@@ -9,7 +9,6 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -20,29 +19,31 @@
 
     <div id="root">
       <header>
-        <h1>Where to go is only part of the equation, start asking <span>When to go</span></h1>
-        <h2>Experience hunters, get access to the early beta. <br />
-        We'll notify you when you can see What's It Like in action.</h2>
+        <div class="wrpr">
+          <h1>Where to go is only part of the equation, start asking <span>When to go</span></h1>
+          <h2>Experience hunters, get access to the early beta. <br />
+          We'll notify you when you can see What's It Like in action.</h2>
+        </div>
       </header>
       <main>
-        <div class="section">
+        <div id="people" class="section">
           <div class="block">
             <h2>When to go vs. Where to go</h2>
             <h3>Meet Alex</h3>
-            <img src="images/alex.png" alt="Alex" /> 
+            <img src="images/alex.png" alt="Alex" class="round-img" />
             <p>Alex hunts the right moments to take stunning nature photography.<br />
             One of his most gorgeous catches is <a href="https://500px.com/photo/61902027/baikal-ice-emerald-by-alexey-trofimov?from=user" target="_blank">Lake Baikal in February</a>.<br />
             Timing is important for Alex.</p>
           </div>
           <div class="block">
             <h3>Here's Jacob</h3>
-            <img src="images/jacob.png" alt="Jacob" /> 
+            <img src="images/jacob.png" alt="Jacob" class="round-img" />
             <p>Jacob has a busy work schedule and only two weeks to travel. He doesn't want to spend them at a hotel, he wants to get the most out of his time off.<br />
             So he picks <a href="https://www.google.com/search?q=hiking+cotopaxi&safe=off&es_sm=91&source=lnms&tbm=isch&sa=X&ei=Gdg-VJaCHMrZavnqguAB&ved=0CAgQ_AUoAQ&biw=1280&bih=628#safe=off&tbm=isch&q=hiking+cotopaxi" target="_blank">Ecuador in January</a> to experience the most breathtaking views of volcanoes.</p>
           </div>
           <div class="block">
             <h3>Lisa is a travel blogger</h3>
-            <img src="images/lisa.png" alt="Lisa" /> 
+            <img src="images/lisa.png" alt="Lisa" class="round-img" />
             <p>Her specialty is world's most incredible events. This year she is going to Chiang Mai in November to catch the <a href="https://www.google.com/search?q=Chiang+Mai+Festival+of+Lights&safe=off&es_sm=91&source=lnms&tbm=isch&sa=X&ei=OIE-VJ_LMcrwaL71gsgI&ved=0CAgQ_AUoAQ&biw=1280&bih=628" target="_blank">Festival of Lights.</a></p>
           </div>
           <div class="block">
@@ -51,7 +52,7 @@
             <p>With What's it like we aim to bring the long deserved attention to the question of when to go.</p>
           </div>
         </div>
-        <div class="section">
+        <div id="insights" class="section">
           <h2>We want your insights</h2>
           <p>As travelers and experience hunters we know things about places. We tell stories and our stories fascinate. It makes us happy when our adventures inspire others. Every single one of us possesses unique insights about what it's like in places we got to know - and collectively, we know what the majority of our planet is like.</p>
           <h4>Collectively, we know what it's like</h4>
@@ -59,7 +60,7 @@
           <p>There are many blanks to fill in. You know things about places. You have the power to inspire others to have the best time of their lives.</p>
           <!-- Signup for What's It Like beta -->
         </div>
-        <div class="section">
+        <div id="editors" class="section">
           <h2>For Editors</h2>
           <p>We're looking for volunteer editors and community managers to join our founding team and help us gather and organize expert knowledge, to reach out to more experts and keep our community inspired.</p>
           <p>Your role can involve wearing as many hats as you wish. You're good at marketing, web development, visual design, product strategy, fundraising, business development, copywriting, analytics, pitching, research, etc. - we want it all, be sure to let us know what are your best skills.</p>
@@ -81,6 +82,7 @@
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

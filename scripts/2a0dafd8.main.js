@@ -1,0 +1,1 @@
+$(document).ready(function(){var a=$("#demo select");a.customSelect(),a.change(function(){var b=this.value-1;a.each(function(){$("option",this).eq(b).prop("selected",!0).trigger("change.customSelect")})})});
